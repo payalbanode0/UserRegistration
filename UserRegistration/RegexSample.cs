@@ -45,11 +45,11 @@ namespace UserRegisteration
             bool res1 = regex.IsMatch(input1);
             if (res1)
             {
-                Console.WriteLine("Valid");
+                Console.WriteLine("Valid!");
             }
             else
             {
-                Console.WriteLine("Invalid");
+                Console.WriteLine("Invalid!");
             }
         }
     }
