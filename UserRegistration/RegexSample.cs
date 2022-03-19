@@ -19,9 +19,6 @@ namespace UserRegisteration
             ValidatingLastName();
 
         }
-
-
-
         public void ValidatingFirstName()
         {
             Regex Regex = new Regex(pattern);
@@ -40,16 +37,16 @@ namespace UserRegisteration
         public void ValidatingLastName()
         {
             Regex regex = new Regex(pattern);
-            Console.WriteLine("Enter the last name : ");
+            Console.WriteLine("Enter the last name:");
             string input1 = Console.ReadLine();
             bool res1 = regex.IsMatch(input1);
             if (res1)
             {
-                Console.WriteLine("Valid!");
+                Console.WriteLine("Valid");
             }
             else
             {
-                Console.WriteLine("Invalid!");
+                Console.WriteLine("Invalid");
             }
         }
     }
